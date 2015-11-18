@@ -1,0 +1,1 @@
+Additionally need jQuery information
