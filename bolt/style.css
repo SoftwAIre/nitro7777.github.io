@@ -7,12 +7,20 @@ html, body {
   color:white;
 }
 
+h2 {
+	color:#0393ff;
+}
+
 div {
 	display:block;
 }
 
 .container {
   max-width: 970px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .supporting {
@@ -22,7 +30,6 @@ div {
 
 .header .container {
 	padding:50px;
-  text-align:center;
 }
 
 .header .container img {
@@ -43,7 +50,7 @@ div {
   border:1px solid #0393ff;
   color:#0393ff;
   background:black;
-  margin:15px 0;
+  
 }
 
 .btn:hover {
@@ -58,6 +65,13 @@ div {
 
 .main .container {
 	text-align:center;
+  padding:200px 100px;
+}
+.main .container .btn {
+	margin:50px;
+}
+.main .container .btn1 {
+	margin: 5px ;
 }
 
 .main .container .browsing {
@@ -66,7 +80,6 @@ div {
   border-right: black;
   border-left:black;
 }
-
 
 textarea:focus, input:focus{
     outline: 0;
@@ -85,8 +98,44 @@ textarea:focus, input:focus{
 
 .supporting .container {
   text-align:center;
+  padding: 50px;
+}
+.supporting .container h2 {
+	color:#0393ff;
 }
 
 img {
 	padding:5px;
+}
+
+.feature {
+	background:url(https://s3.amazonaws.com/codecademy-content/projects/bolt-network/feature.jpg) no-repeat center center;
+  background-size: cover;
+  text-align:center;
+  height: 350px;
+  position:relative;
+  padding-top:100px;
+}
+
+.feature .container {
+  padding:0 15px;
+}
+
+.footer ul {
+	list-style:none;
+}
+
+.footer li {
+	display:block;
+  color:#0393ff;
+}
+
+lh {
+	color:white;
+  font-weight:bold;
+}
+
+.dist {
+	margin: 15px;
+  white-space:no-wrap;
 }
