@@ -1,0 +1,148 @@
+html, body {
+  font-family: "Oxygen", sans-serif; 
+  font-weight: 300; 
+  margin: 0;
+  padding: 0;
+  background:black;
+  color:white;
+}
+
+h2 {
+	color:#0393ff;
+}
+
+div {
+	display:block;
+}
+
+.container {
+  max-width: 970px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.supporting {
+  background-image: url(s3.amazonaws.com/codecademy-content/projects/bolt-network/diagmonds_@2X.png);
+  background-size: 141px 142px;
+}
+
+.header .container {
+	padding:50px;
+}
+
+.header .container img {
+	width:180px;
+  height:34px;
+}
+
+.header .container ul {
+	list-style:none;
+}
+.header .container li{
+	display:inline;
+}
+
+.btn, button {
+	text-decoration:none;
+  border:1px solid #0393ff;
+  color:#0393ff;
+  background:black;
+}
+
+.btn-default {
+	
+}
+
+.btn:hover {
+	background:#0393ff;
+  border: 1px solid black;
+  color:white;
+}
+
+.logo {
+  float:left;
+}
+
+.main .container {
+	text-align:center;
+  padding:200px 100px;
+}
+.main .container .btn {
+	margin:50px;
+}
+.main .container .btn1 {
+	margin: 5px ;
+}
+
+.main .container .browsing {
+	background:black;
+  border-top:black;
+  border-right: black;
+  border-left:black;
+  border-bottom:1px solid white;
+  border-radius:0px;
+}
+
+#browsing:focus { 
+  transition: 1s;
+  border-bottom: 1px solid #0393ff;
+  box-shadow:0px 0px 0px;
+  outline: 0px;
+}
+
+.supporting {
+	background:url(diagmonds_@2X.png);
+  background-repeat: repeat-y|repeat-x;
+}
+
+.supporting .container {
+  text-align:center;
+  padding: 50px;
+}
+.supporting .container .thumbnail {
+  background:transparent; 
+  border: none;
+  padding: 0;
+}
+
+.supporting .container h2 {
+	color:#0393ff;
+}
+
+img {
+	padding:5px;
+}
+
+.feature {
+	background:url(https://s3.amazonaws.com/codecademy-content/projects/bolt-network/feature.jpg) no-repeat center center;
+  background-size: cover;
+  text-align:center;
+  height: 350px;
+  position:relative;
+  padding-top:100px;
+}
+
+.feature .container {
+  padding:0 15px;
+}
+
+.footer ul {
+	list-style:none;
+}
+
+.footer li {
+	display:block;
+  color:#0393ff;
+}
+
+lh {
+	color:white;
+  font-weight:bold;
+}
+
+.dist {
+	margin: 15px;
+  white-space:no-wrap;
+}
