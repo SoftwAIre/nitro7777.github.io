@@ -128,8 +128,9 @@ img {
   padding:0 15px;
 }
 
-.footer ul {
+.footer ul, .footer li {
 	list-style:none;
+  white-space:no-wrap;
 }
 
 .footer li {
@@ -140,9 +141,9 @@ img {
 lh {
 	color:white;
   font-weight:bold;
+  white-space:nowrap;
 }
 
 .dist {
 	margin: 15px;
-  white-space:no-wrap;
 }
