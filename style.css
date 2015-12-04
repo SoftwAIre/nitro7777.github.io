@@ -24,7 +24,7 @@ div {
 }
 
 .supporting {
-  background-image: url(s3.amazonaws.com/codecademy-content/projects/bolt-network/diagmonds_@2X.png);
+  background-image: url(s3.amazonaws.com/codecademy-content/projects/bolt-network/diagmonds_@2X.png) repeat center center;
   background-size: 141px 142px;
 }
 
