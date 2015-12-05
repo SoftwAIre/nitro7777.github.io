@@ -5,6 +5,10 @@ html, body {
   color:white;
 }
 
+div {
+	display:block;
+}
+
 .container {
 	max-width:940px;
 }
@@ -21,17 +25,85 @@ a {
 	text-decoration:none;
 }
 
+.disp {
+	margin:50px 20px;
+}
+
 .jumbotron {
 	background: url(https://s3.amazonaws.com/codecademy-content/projects/bass/bg.jpg) no-repeat center center;
+  background-size:cover;
+  height:800px;
+  margin:0;
 }
 
 .logo {
-	width:100px;
-  height:100px;
+	width:85px;
+  height:85px;
 }
 
 .btn-default {
- 	background:rgb(255,0,0);
- 	border:0;
-  
+  border:0;
+  color:white;
+  border-radius:0;
+  margin: 3px;
+}
+
+.press {
+	background:rgb(255,0,0);
+}
+
+.not-pressed {
+	background:black;
+}
+
+.thumbnail {
+	background:transparent;
+  border:none;
+}
+
+.main {
+	vertical-align:middle;
+  padding:100px;
+}
+
+.gr {
+	background:#333333;
+}
+
+.texty-text {
+	padding:40px;
+}
+
+.support {
+  background:url(https://s3.amazonaws.com/codecademy-content/projects/bass/feature.jpg) no-repeat center center;
+  background-size:cover;
+  height:400px;
+  text-align:center;
+  padding:150px;
+}
+
+.footer a {
+	color:gray;
+  text-decoration:none;
+}
+
+.footer {
+	padding:50px;
+}
+
+.footer h4 {
+	padding:0 0 0 50px;
+}
+
+.footer ul {
+  display:block;
+  float:left;
+}
+
+.footer li {
+	display: list-item;
+}
+
+.col-md-2 {
+	float:left;
 }
