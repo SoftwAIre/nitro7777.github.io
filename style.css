@@ -163,7 +163,7 @@ button {
 }
 
 .jumbotron {
-	background: url(https://s3.amazonaws.com/codecademy-content/projects/newsroom/bass-bg.jpg) no-repeat center center;
+	background: url(https://images.unsplash.com/photo-1442029739115-ce733f0de45e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=b7de3c8be0cb6c0aa24a2a8451d49ca9) no-repeat center center;
   background-size:cover;
   vertical-align:middle;
   height:500px;
