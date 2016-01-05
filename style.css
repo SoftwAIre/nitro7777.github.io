@@ -167,6 +167,7 @@ button {
   background-size:cover;
   vertical-align:middle;
   height:500px;
+  overflow: hidden;
 }
 
 .jumbotron .container {
