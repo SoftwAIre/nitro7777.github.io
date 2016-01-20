@@ -1,26 +1,18 @@
 <!doctype html>
-<html ng-app="todoApp">
+<html ng-app="project">
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <script src="todo.js"></script>
-    <link rel="stylesheet" href="todo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-resource.min.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js">
+   </script>
+    <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/0.9.0/angularfire.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="project.js"></script>
   </head>
   <body>
-    <h2>Copied from AngularJS Page</h2>
-    <div ng-controller="TodoListController as todoList">
-      <span>{{todoList.remaining()}} of {{todoList.todos.length}} remaining</span>
-      [ <a href="" ng-click="todoList.archive()">archive</a> ]
-      <ul class="unstyled">
-        <li ng-repeat="todo in todoList.todos">
-          <input type="checkbox" ng-model="todo.done">
-          <span class="done-{{todo.done}}">{{todo.text}}</span>
-        </li>
-      </ul>
-      <form ng-submit="todoList.addTodo()">
-        <input type="text" ng-model="todoList.todoText"  size="30"
-               placeholder="add new todo here">
-        <input class="btn-primary" type="submit" value="add">
-      </form>
-    </div>
+    <h2>JavaScript Projects</h2>
+    <div ng-view></div>
   </body>
 </html>
