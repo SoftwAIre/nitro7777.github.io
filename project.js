@@ -43,6 +43,7 @@ angular.module('project', ['ngRoute', 'firebase'])
     });
   };
 })
+ 
 .config(function($routeProvider) {
   var resolveProjects = {
     projects: function (Projects) {
