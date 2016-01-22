@@ -31,7 +31,7 @@ body {
   height: 450px;
   width: 350px;
   display: block;
-  margin: auto auto auto -50px;
+  margin: auto auto auto -3em;
 }
 
 .title {
