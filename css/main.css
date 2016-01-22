@@ -25,13 +25,13 @@ body {
    display: inline-block;
    margin: 0 2px;
    position: relative;
-   height:450px;
-   background-image:cover center center no-repeat;
 }
 
-.card {
-  display:;
-  margin: 0 auto;
+.card img {
+  height: 450px;
+  display:block;
+  width:100%%;
+  margin:auto;
 }
 
 .title {
