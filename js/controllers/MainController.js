@@ -1,7 +1,7 @@
 app.controller('MainController', ['$scope', function($scope) {
   $scope.apps = [
     {
-      icon:"https://upload.wikimedia.org/wikipedia/commons/8/8d/US_Navy_080112-N-7367K-006_Builder_3rd_Class_Bryan_Williams,_assigned_to_Naval_Mobile_Construction_Battalion_(NMCB)_1,_Task_Force_Sierra,_scrambles_out_of_a_defender's_reach_in_a_two-hand-touch_football_game_during_the_detachme.jpg",
+      icon:"https://upload.wikimedia.org/wikipedia/commons/0/02/06_Chgo_Beach_Soccer_Invitational_Challenge_me.JPG",
       title:'smoove',
       developer:'CGM',
       price: 1.99
