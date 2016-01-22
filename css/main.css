@@ -29,9 +29,9 @@ body {
 
 .card img {
   height: 450px;
-  display:block;
-  width:100%%;
-  margin:auto;
+  width: 350px;
+  display: block;
+  margin: auto auto auto -50px;
 }
 
 .title {
