@@ -1,24 +1,47 @@
-Ext.application({
-    name: 'Sencha',
+<!DOCTYPE HTML>
+<html manifest="">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    launch: function() {
-        Ext.create("Ext.tab.Panel", {
-            fullscreen: true,
-            tabBarPosition: 'bottom',
+    <title>Feezy</title>
 
-            items: [
-                {
-                    title: 'Home',
-                    iconCls: 'home',
-                    html: [
-                        '',
-                        'Welcome to Sencha Touch',
-                        "We're creating the Getting Started app, which demonstrates how ",
-                        "to use tabs, lists, and forms to create a simple app.",
-                        'Sencha Touch'
-                    ].join("")
-                }
-            ]
-        });
-    }
-});
+
+    <script type="text/javascript">
+        var Ext = Ext || {}; // Ext namespace won't be defined yet...
+
+        Ext.beforeLoad = function (tags) {
+            var s = location.search,  // the query string (ex "?foo=1&bar")
+                profile;
+                            // For testing look for "?classic" or "?modern" in the URL to override
+            // device detection default.
+            //
+            if (s.match(/\bclassic\b/)) {
+                profile = 'classic';
+            }
+            else if (s.match(/\bmodern\b/)) {
+                profile = 'modern';
+            }
+            else {
+                profile = tags.desktop ? 'classic' : 'modern';
+                //profile = tags.phone ? 'modern' : 'classic';
+            }
+
+            Ext.manifest = profile; // this name must match a build profile name
+
+            // This function is called once the manifest is available but before
+            // any data is pulled from it.
+          //return function (manifest) {
+                // peek at / modify the manifest object
+            //};
+        };
+    </script>
+
+
+    <!-- The line below must be kept intact for Sencha Cmd to build your application -->
+    <script id="microloader" data-app="94b243a6-db39-4e3d-a90e-68d42e35d5dd" type="text/javascript" src="bootstrap.js"></script>
+
+</head>
+<body></body>
+</html>
