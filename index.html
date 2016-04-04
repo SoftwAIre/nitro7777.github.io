@@ -1,15 +1,24 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title>Hello World</title>
+Ext.application({
+    name: 'Sencha',
 
-    <!-- Load Sencha Touch -->
-    <link rel="stylesheet" href="../_libs/sencha/resources/css/sencha-touch.css" /> 
-    <script src="../_libs/sencha/sencha-touch-all-debug.js"></script>
+    launch: function() {
+        Ext.create("Ext.tab.Panel", {
+            fullscreen: true,
+            tabBarPosition: 'bottom',
 
-    <!-- Load our code -->
-    <script src="app.js"></script> 
-</head>
-<body></body> 
-</html>
+            items: [
+                {
+                    title: 'Home',
+                    iconCls: 'home',
+                    html: [
+                        '',
+                        'Welcome to Sencha Touch',
+                        "We're creating the Getting Started app, which demonstrates how ",
+                        "to use tabs, lists, and forms to create a simple app.",
+                        'Sencha Touch'
+                    ].join("")
+                }
+            ]
+        });
+    }
+});
